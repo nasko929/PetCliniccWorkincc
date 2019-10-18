@@ -13,4 +13,10 @@ public class IndexController {
         model.addAttribute("helloWorldNotice", "Hello Guys!");
         return "index";
     }
+
+    @RequestMapping("/oups")
+    public String oupsHandler(Model model) {
+
+        return "notimplemented";
+    }
 }

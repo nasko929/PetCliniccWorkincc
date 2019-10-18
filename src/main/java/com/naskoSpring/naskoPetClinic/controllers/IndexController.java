@@ -9,6 +9,7 @@ public class IndexController {
 
     @RequestMapping({"", "/", "index", "index.html"})
     public String index(Model model) {
+        System.out.println("Hlell");
         model.addAttribute("helloWorldNotice", "Hello Guys!");
         return "index";
     }
